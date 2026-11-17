@@ -2,8 +2,8 @@ name: Automated Instagram Hackathon Publisher
 
 on:
   schedule:
-    # 18:22 UTC = 23:52 IST (11:52 PM IST - Late Night Prime Slot)
-    - cron: '22 18 * * *'
+    # 16:30 UTC = 22:00 IST (10:00 PM IST - Peak Late Night Overnight Slot)
+    - cron: '30 16 * * *'
     # 07:30 UTC = 13:00 IST (01:00 PM IST - Afternoon Lunch Slot)
     - cron: '30 7 * * *'
   workflow_dispatch: # Allows manual 1-click test trigger anytime from GitHub UI
