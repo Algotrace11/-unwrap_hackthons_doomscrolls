@@ -44,10 +44,10 @@ jobs:
         run: |
           if [ -n "$INSTAGRAM_ACCOUNT_ID" ] && [ "$INSTAGRAM_ACCOUNT_ID" != "your_instagram_account_id" ]; then
             echo "🔑 Instagram credentials detected. Running in LIVE publish mode..."
-            python main.py --publish
+            python run.py --publish
           else
             echo "🧪 Instagram credentials not configured yet. Running in TEST / DRY-RUN mode..."
-            python main.py --dry-run
+            python run.py --dry-run
           fi
 
       - name: Commit and Push Database State
